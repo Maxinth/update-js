@@ -5,5 +5,7 @@ let book = {
 
 const topic = book.topic;
 
-let val = (book.author = "me");
+let val = book?.topic;
+
+// logs
 console.log(val);
