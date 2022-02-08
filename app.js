@@ -7,17 +7,19 @@ const printNum = () => {
   //   let num = Math.floor(Math.random() * 101);
   //   console.log(`num is ${num}`);
 
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i < 101; i++) {
     // console.log(`i is ${i}`);
     if (i % 5 === 0 && i % 3 === 0) {
       console.log(`CracklePop`);
-    } else if (i % 3 === 0) {
-      console.log(`Crackle`);
-    } else if (i % 5 === 0) {
-      console.log(`Pop`);
-    } else {
-      console.log(i);
     }
+
+    if (i % 3 === 0 && i % 5 !== 0) {
+      console.log(`Crackle`);
+    }
+    if (i % 5 === 0 && i % 3 !== 0) {
+      console.log(`Pop`);
+    }
+    console.log(i);
   }
 };
 
