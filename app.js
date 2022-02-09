@@ -1,5 +1,1 @@
-let a;
-
-a = 2;
-
-console.log(a);
+let y = x + f(a + b).toString();
