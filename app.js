@@ -1,7 +1,6 @@
-let café = 1; // Define a variable using a Unicode character
-café; // => 1; access the variable using an escape sequence
-café; // => 1; another form of the same escape sequence
+let café = 1; // This constant is named "caf\u{e9}"
+café = 2; // This constant is different: "cafe\u{301}"
+café; // => 1: this constant has one value
+café; // => 2: this indistinguishable constant has a different value
 
 console.log(café);
-
-console.log("\u{1F600}");
