@@ -1,1 +1,5 @@
-let y = x + f(a + b).toString();
+const goFetch = () => {
+  return true;
+};
+
+goFetch();
