@@ -1,3 +1,3 @@
-const val = 0Xff;
+const val = 0b10101;
 
-console.log(val)
+console.log(val);
