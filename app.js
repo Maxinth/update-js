@@ -1,3 +1,3 @@
-const isHere = {};
+const val = 0Xff;
 
-console.log(!!isHere);
+console.log(val)
