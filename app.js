@@ -1,5 +1,3 @@
-const goFetch = () => {
-  return true;
-};
+const isHere = {};
 
-goFetch();
+console.log(!!isHere);
