@@ -1,4 +1,4 @@
-const val = 1_000_000_000; // _underscore as a thousand separator
+const val = 0x89_ab_cd_ef; // _underscore as a BYTES separator
 
 // log goes here
 console.log(val);
