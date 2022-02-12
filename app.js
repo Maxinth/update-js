@@ -1,24 +1,10 @@
 // TYPES, VALUES and Variables
 let val = Infinity;
-val = Number.POSITIVE_INFINITY; // still Infinity
-val = 1 / 0;
+let x = 0.3 - 0.2; // NOT .1 as you might expect
+let y = 0.2 - 0.1; // now this is 0.1
 
-// negative infinity
-val = -Infinity;
-val = Number.NEGATIVE_INFINITY;
-val = -1 / 0;
-val = -Number.MAX_VALUE * 2;
-
-// NaN
-val = NaN;
-val = Number.NaN;
-val = 0 / 0;
-val = Infinity / Infinity;
-
-// underflow
-val = Number.MIN_VALUE / 2;
-val = -Number.MIN_VALUE / 2;
-val = -1 / Infinity;
+console.log({ x, y });
+val = x === y;
 
 /**
  *
