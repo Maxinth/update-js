@@ -1,5 +1,5 @@
 // TYPES, VALUES and Variables
-let val = 1234n;
+let val = 0o7777n;
 /**
  *
  * LOGS
