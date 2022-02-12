@@ -16,10 +16,13 @@ val = 0 / 0;
 val = Infinity / Infinity;
 
 // underflow
+val = Number.MIN_VALUE / 2;
+val = -Number.MIN_VALUE / 2;
+val = -1 / Infinity;
+
 /**
  *
  * LOGS
  */
 // log goes here
-console.log(typeof val);
-console.log(val);
+console.log({ value: val, " typeof value": typeof val });
