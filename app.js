@@ -1,10 +1,9 @@
 // TYPES, VALUES and Variables
 let val;
 
-val = Date.now();
-val = new Date();
-
-val = Date().toLowerCase();
+val = "";
+val = "testing";
+val = 'name="myform';
 
 /*
  * LOGS
