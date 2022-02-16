@@ -2,7 +2,7 @@
 let val;
 
 val = `
-You \'re right, it can\'t be a quote
+\0
 `;
 
 /*
