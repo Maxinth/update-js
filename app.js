@@ -2,8 +2,7 @@
 let val;
 
 val = `
-the newline character at the end of this line
-is included literally in this string
+You \'re right, it can\'t be a quote
 `;
 
 /*
