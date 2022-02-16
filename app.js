@@ -1,7 +1,10 @@
 // TYPES, VALUES and Variables
 let val;
 
-val = `time\nlines`;
+val = `
+the newline character at the end of this line
+is included literally in this string
+`;
 
 /*
  * LOGS
