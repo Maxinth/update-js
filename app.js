@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 
 const getData = () => {
   //   fetch("https://jsonplaceholder.typicode.com/todos/1")
@@ -6,7 +6,7 @@ const getData = () => {
   //     .then((json) => console.log(json));
 
   axios
-    .get("https://jsonplaceholder.typicode.com/todos/1555555")
+    .get("https://jsonplaceholder.typicode.com/todos/1")
     .then((res) => console.log(res.data))
     .catch((err) => console.log(err));
 };
