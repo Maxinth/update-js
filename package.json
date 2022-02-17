@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "type": "module",
   "scripts": {
     "start": "nodemon app.js --watch"
   },
@@ -21,5 +20,8 @@
     "axios": "^0.26.0",
     "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }
