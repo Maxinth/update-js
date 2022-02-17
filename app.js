@@ -5,10 +5,16 @@ const getData = () => {
   //     .then((response) => response.json())
   //     .then((json) => console.log(json));
 
-  axios
-    .get("https://kreatesell.io/api/admin/Sales/Stats")
-    .then((res) => console.log(res.data))
-    .catch((err) => console.log(err));
+  console.log(process.env);
+  //   axios
+  //     .get(`${process.env.BASE_URL}/admin/Sales/Stats`)
+  //     .then((res) => {
+  //       console.log("successfully fetched");
+  //       console.log(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.error("AN ERROR OCCURRED!", err);
+  //     });
 };
 
 getData();

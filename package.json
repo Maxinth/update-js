@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Maxinth/update-js#readme",
   "dependencies": {
     "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   }
 }
