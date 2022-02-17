@@ -6,7 +6,7 @@ const getData = () => {
   //     .then((json) => console.log(json));
 
   axios
-    .get("https://jsonplaceholder.typicode.com/todos/1")
+    .get("https://kreatesell.io/api/admin/Sales/Stats")
     .then((res) => console.log(res.data))
     .catch((err) => console.log(err));
 };
