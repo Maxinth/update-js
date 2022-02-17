@@ -1,12 +1,10 @@
-// TYPES, VALUES and Variables
-let val;
+console.log('I');
 
-val = `
-\0
-`;
 
-/*
- * LOGS
- */
-// log goes here
-console.log({ value: val, " typeof value": typeof val });
+// this will be shown after 2 seconds.
+
+setTimeout(() => {
+    console.log('eat')
+}, 2000);
+
+console.log('Ice cream!')
