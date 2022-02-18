@@ -8,9 +8,9 @@ const formData = {
   password: "P@ssw0rd1!",
 };
 const getData = () => {
-  //   fetch("https://jsonplaceholder.typicode.com/todos/1")
-  //     .then((response) => response.json())
-  //     .then((json) => console.log(json));
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
   //   axios
   //     .post(baseUrl, {
@@ -25,22 +25,6 @@ const getData = () => {
   //     .catch((err) => {
   //       console.error("AN ERROR OCCURRED!", err.error);
   //     });
-
-  fetch(baseUrl, {
-    method: "POST",
-    body: JSON.stringify(...formData),
-    header: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((res) => {
-      console.log("successfully fetched");
-      console.log(res);
-      localStorage.setItem("token", res.token);
-    })
-    .catch((err) => {
-      console.error("AN ERROR OCCURRED!", err.error);
-    });
 };
 
 getData();
