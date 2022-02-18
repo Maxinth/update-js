@@ -1,5 +1,5 @@
 // import axios from "axios";
-// const axios = require("axios");
+// const axios = requirejs("axios");
 //
 // const { default: axios } = require("axios");
 
@@ -9,13 +9,20 @@ const formData = {
   username: "super.admin@kreatesell.com",
   password: "P@ssw0rd1!",
 };
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   requirejs(["axios"], function (lodash) {
+//     const headerEl = document.getElementById("header");
+//     headerEl.textContent = lodash.upperCase("hello world");
+//   });
+// });
 const getData = async () => {
   const response = await fetch(baseUrl, {
     method: "POST",
     ...formData,
     header: {
-      Accept: "application/json",
       "Content-Type": "application/json",
+      "Access-Control-Origin": "*",
     },
   });
 
@@ -23,17 +30,16 @@ const getData = async () => {
   console.log(data);
 };
 
-// axios
 // const getData = () => {
 //   axios
 //     .post(baseUrl, {
 //       ...formData,
 //       header: {
-//         Accept: "application/json",
 //         "Content-Type": "application/json",
+//         "Access-Control-Origin": "*",
 //       },
 //     })
-//     .then((res) => console.log(res))
+//     .then((res) => console.log(res.data))
 //     .catch((err) => console.log("ERROR OCCURRED!"));
 // };
 
