@@ -1,6 +1,6 @@
-let name = 'Hello world';
-let val = name.substring(1,4);
-val  = name.slice(1,4)
+let itemName = 'Hello world';
+let val = itemName.substring(1,4);
+val  = itemName.slice(1,4)
 
 
 console.log(val)
