@@ -1,3 +1,5 @@
-let name = 'two\nline';
+let name = 'one\
+            long\
+            line';
 
 console.log(name)
