@@ -1,15 +1,8 @@
-let itemName = "Hello, world";
-let s = itemName;
-let val = itemName.substring(1, 4);
-val = itemName.slice(1, 4);
-val = itemName.slice(-3);
+let s = "Hello, world";
 
-val = s.split(", ");
-val = s.indexOf("l", 6);
-val = s.indexOf("zz");
-val = s.lastIndexOf("l");
-val = s.startsWith("Hell");
-val = s.startsWith(" Hello");
-val = s.endsWith(", world");
+// creating modified version of the string
+let val = s.replace("llo", "ya");
+val = s.toLowerCase();
+val = s.toUpperCase();
 
-console.log(val);
+console.log({ val, s });
