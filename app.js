@@ -6,5 +6,7 @@ val = itemName.slice(-3);
 
 val = s.split(", ");
 val = s.indexOf("l", 6);
+val = s.indexOf("zz");
+val = s.lastIndexOf("l");
 
 console.log(val);
