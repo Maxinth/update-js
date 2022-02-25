@@ -4,5 +4,7 @@ let s = "Hello, world";
 let val = s.replace("llo", "ya");
 val = s.toLowerCase();
 val = s.toUpperCase();
+val = s.normalize();
+val = s.normalize("NFKC");
 
 console.log({ val, s });
