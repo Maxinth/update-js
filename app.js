@@ -1,5 +1,4 @@
 const initData = require("./base");
-// console.log(initData);
 
 const runFilter = (id) => {
   return initData.filter((item) => item.alliance === id);
@@ -15,6 +14,8 @@ const OWandST = [...OW, ...ST].length;
 const OWandSA = [...OW, ...ST].length;
 const STandSA = [...ST, ...SA].length;
 
-const all = [...OW, ...SA, ...ST].length;
+const all = [...OW, ...SA, ...ST];
 
-console.log(all);
+const filterOwFromAll = all.filter((item) => item.alliance !== "OW");
+
+console.log(filterOwFromAll.length);
