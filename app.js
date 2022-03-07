@@ -22,8 +22,6 @@ const filterOneFromAll = (id) => all.filter((item) => item.alliance !== id);
 // filter two from all
 const filterTwoFromAll = (id, id2) =>
   all.filter((item) => item.alliance !== id && item.alliance !== id2);
-// const filterOwFromAll = filterFromAll("OW");
-// const filterSTFromAll = filterFromAll("ST");
-// const filterSAFromAll = filterFromAll("SA");
 
-// console.log(filterOwFromAll.length);
+// when all filters are unchecked
+const allFiltersUnchecked = initialData;
