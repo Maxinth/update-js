@@ -1,13 +1,12 @@
-let s = "Hello, world";
+const initData = require("./base");
+// console.log(initData);
 
-// creating modified version of the string
-let val = s.replace("llo", "ya");
-val = s.toLowerCase();
-val = s.toUpperCase();
-val = s.normalize();
-val = s.normalize("NFKC");
+const runFilter = (id) => {
+  return initData.filter((item) => item.alliance === id);
+};
 
-// es2017
-val = "x".padStart(3);
+const OW = runFilter("OW");
+const ST = runFilter("ST");
+const SA = runFilter("SA");
 
-console.log({ val, s });
+// console.log({ OW, ST, SA });
