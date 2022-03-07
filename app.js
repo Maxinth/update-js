@@ -17,11 +17,13 @@ const STandSA = [...ST, ...SA].length;
 const all = [...OW, ...SA, ...ST];
 
 // ALL INITIALLY CHECKED, remove one.
-const filterFromAll = (id, id2) =>
-  all.filter((item) => item.alliance !== id && item.alliance !== id2);
+const filterOneFromAll = (id) => all.filter((item) => item.alliance !== id);
 
+// filter two from all
+const filterTwoFromAll = (id, id2) =>
+  all.filter((item) => item.alliance !== id && item.alliance !== id2);
 // const filterOwFromAll = filterFromAll("OW");
 // const filterSTFromAll = filterFromAll("ST");
 // const filterSAFromAll = filterFromAll("SA");
 
-console.log(filterFromAll("OW", "ST").length);
+// console.log(filterOwFromAll.length);
