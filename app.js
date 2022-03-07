@@ -16,6 +16,12 @@ const STandSA = [...ST, ...SA].length;
 
 const all = [...OW, ...SA, ...ST];
 
-const filterOwFromAll = all.filter((item) => item.alliance !== "OW");
+// ALL INITIALLY CHECKED, remove one.
+const filterFromAll = (id, id2) =>
+  all.filter((item) => item.alliance !== id && item.alliance !== id2);
 
-console.log(filterOwFromAll.length);
+// const filterOwFromAll = filterFromAll("OW");
+// const filterSTFromAll = filterFromAll("ST");
+// const filterSAFromAll = filterFromAll("SA");
+
+console.log(filterFromAll("OW", "ST").length);
