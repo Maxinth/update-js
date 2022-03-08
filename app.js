@@ -19,12 +19,12 @@ const STandSA = [...ST, ...SA].length;
 // all checked
 const all = [...OW, ...SA, ...ST];
 
-// custom reusable functions - assuming all filters have been initially checked
+// custom reusable functions - assuming all filters have been initially checked and we uncheck
 
 // ALL INITIALLY CHECKED, remove one.
 const filterOneFromAll = (id) => all.filter((item) => item.alliance !== id);
 
-// filter two from all
+// all initially checked, remove two : filter two from all
 const filterTwoFromAll = (id, id2) =>
   all.filter((item) => item.alliance !== id && item.alliance !== id2);
 
